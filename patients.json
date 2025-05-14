@@ -1,0 +1,1007 @@
+[
+  {
+    "id": "P1",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N98",
+      "N33",
+      "N74"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 1
+  },
+  {
+    "id": "P2",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N50",
+      "N45",
+      "N31"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 1
+  },
+  {
+    "id": "P3",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N84",
+      "N23"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 2
+  },
+  {
+    "id": "P4",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N75",
+      "N96"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 2
+  },
+  {
+    "id": "P5",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N24",
+      "N5",
+      "N33"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 2
+  },
+  {
+    "id": "P6",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N58",
+      "N37"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 1
+  },
+  {
+    "id": "P7",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N52",
+      "N37",
+      "N53"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 3
+  },
+  {
+    "id": "P8",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N92"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 3
+  },
+  {
+    "id": "P9",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N92",
+      "N35"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 2
+  },
+  {
+    "id": "P10",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N65",
+      "N99",
+      "N100"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 2
+  },
+  {
+    "id": "P11",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N52",
+      "N55",
+      "N34"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 2
+  },
+  {
+    "id": "P12",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N34",
+      "N87"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 1
+  },
+  {
+    "id": "P13",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N83"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 1
+  },
+  {
+    "id": "P14",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N59"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P15",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N61"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 2
+  },
+  {
+    "id": "P16",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N13",
+      "N9",
+      "N80"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P17",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N44"
+    ],
+    "required_shift": "Mon PM",
+    "priority": 3
+  },
+  {
+    "id": "P18",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N96",
+      "N66",
+      "N99"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 3
+  },
+  {
+    "id": "P19",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N93",
+      "N38",
+      "N64"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 2
+  },
+  {
+    "id": "P20",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N97",
+      "N48",
+      "N40"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 3
+  },
+  {
+    "id": "P21",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N9"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 2
+  },
+  {
+    "id": "P22",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N2"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 1
+  },
+  {
+    "id": "P23",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N42"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 2
+  },
+  {
+    "id": "P24",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N80"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P25",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N60"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 2
+  },
+  {
+    "id": "P26",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N64",
+      "N43",
+      "N57"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 1
+  },
+  {
+    "id": "P27",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N76",
+      "N44"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 1
+  },
+  {
+    "id": "P28",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N69"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 1
+  },
+  {
+    "id": "P29",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N90",
+      "N40",
+      "N80"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 1
+  },
+  {
+    "id": "P30",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N44",
+      "N83",
+      "N16"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 1
+  },
+  {
+    "id": "P31",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N11",
+      "N74",
+      "N7"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 3
+  },
+  {
+    "id": "P32",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N71",
+      "N34"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 1
+  },
+  {
+    "id": "P33",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N5",
+      "N46"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 1
+  },
+  {
+    "id": "P34",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N94",
+      "N75"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P35",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N37",
+      "N20",
+      "N29"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 2
+  },
+  {
+    "id": "P36",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N98",
+      "N83",
+      "N4"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 1
+  },
+  {
+    "id": "P37",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N12"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 1
+  },
+  {
+    "id": "P38",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N45",
+      "N84"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 1
+  },
+  {
+    "id": "P39",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N25",
+      "N61",
+      "N63"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 1
+  },
+  {
+    "id": "P40",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N73",
+      "N79",
+      "N19"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 2
+  },
+  {
+    "id": "P41",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N25",
+      "N37",
+      "N97"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 1
+  },
+  {
+    "id": "P42",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N22"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 1
+  },
+  {
+    "id": "P43",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N95",
+      "N59",
+      "N94"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 2
+  },
+  {
+    "id": "P44",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N89"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 3
+  },
+  {
+    "id": "P45",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N100",
+      "N76"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P46",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N82",
+      "N23"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 3
+  },
+  {
+    "id": "P47",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N78",
+      "N63"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 3
+  },
+  {
+    "id": "P48",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N22",
+      "N51"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 2
+  },
+  {
+    "id": "P49",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N69",
+      "N16"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 1
+  },
+  {
+    "id": "P50",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N13",
+      "N31"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 2
+  },
+  {
+    "id": "P51",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N71",
+      "N85"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P52",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N69",
+      "N49"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P53",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N38",
+      "N80"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 1
+  },
+  {
+    "id": "P54",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N42"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 2
+  },
+  {
+    "id": "P55",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N64"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 2
+  },
+  {
+    "id": "P56",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N52",
+      "N17"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P57",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N59",
+      "N100",
+      "N14"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P58",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N17",
+      "N38"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P59",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N69",
+      "N58",
+      "N72"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 2
+  },
+  {
+    "id": "P60",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N84"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 2
+  },
+  {
+    "id": "P61",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N84",
+      "N87"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 1
+  },
+  {
+    "id": "P62",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N20"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 3
+  },
+  {
+    "id": "P63",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N45"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 3
+  },
+  {
+    "id": "P64",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N29",
+      "N38",
+      "N100"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 3
+  },
+  {
+    "id": "P65",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N48"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 2
+  },
+  {
+    "id": "P66",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N59",
+      "N44"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 1
+  },
+  {
+    "id": "P67",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N77",
+      "N63"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P68",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N77"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 3
+  },
+  {
+    "id": "P69",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N29"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 1
+  },
+  {
+    "id": "P70",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N59",
+      "N8",
+      "N26"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 3
+  },
+  {
+    "id": "P71",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N34",
+      "N83",
+      "N97"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P72",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N8"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 1
+  },
+  {
+    "id": "P73",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N92",
+      "N75"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 3
+  },
+  {
+    "id": "P74",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N29"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 1
+  },
+  {
+    "id": "P75",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N29"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P76",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N60",
+      "N41",
+      "N18"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P77",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N86",
+      "N100",
+      "N34"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 2
+  },
+  {
+    "id": "P78",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N92"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 1
+  },
+  {
+    "id": "P79",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N33",
+      "N39",
+      "N39"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 2
+  },
+  {
+    "id": "P80",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N53",
+      "N36",
+      "N67"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 3
+  },
+  {
+    "id": "P81",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N5"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 3
+  },
+  {
+    "id": "P82",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N68",
+      "N1",
+      "N77"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 2
+  },
+  {
+    "id": "P83",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N19",
+      "N62",
+      "N80"
+    ],
+    "required_shift": "Mon AM",
+    "priority": 1
+  },
+  {
+    "id": "P84",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N35"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 1
+  },
+  {
+    "id": "P85",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N66",
+      "N5"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 1
+  },
+  {
+    "id": "P86",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N9"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P87",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N84"
+    ],
+    "required_shift": "Tue AM",
+    "priority": 2
+  },
+  {
+    "id": "P88",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N64",
+      "N86",
+      "N78"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 2
+  },
+  {
+    "id": "P89",
+    "condition": "pediatrics",
+    "preferred_nurse_ids": [
+      "N10"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 1
+  },
+  {
+    "id": "P90",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N70",
+      "N50"
+    ],
+    "required_shift": "Thu AM",
+    "priority": 1
+  },
+  {
+    "id": "P91",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N14",
+      "N39"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 2
+  },
+  {
+    "id": "P92",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N58",
+      "N95"
+    ],
+    "required_shift": "Wed PM",
+    "priority": 2
+  },
+  {
+    "id": "P93",
+    "condition": "ER",
+    "preferred_nurse_ids": [
+      "N48"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 3
+  },
+  {
+    "id": "P94",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N63",
+      "N13",
+      "N85"
+    ],
+    "required_shift": "Mon PM",
+    "priority": 3
+  },
+  {
+    "id": "P95",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N54",
+      "N41",
+      "N99"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 2
+  },
+  {
+    "id": "P96",
+    "condition": "surgery",
+    "preferred_nurse_ids": [
+      "N66",
+      "N32",
+      "N62"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 3
+  },
+  {
+    "id": "P97",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N43",
+      "N55",
+      "N52"
+    ],
+    "required_shift": "Fri PM",
+    "priority": 2
+  },
+  {
+    "id": "P98",
+    "condition": "geriatrics",
+    "preferred_nurse_ids": [
+      "N86",
+      "N15",
+      "N88"
+    ],
+    "required_shift": "Wed AM",
+    "priority": 1
+  },
+  {
+    "id": "P99",
+    "condition": "ICU",
+    "preferred_nurse_ids": [
+      "N26",
+      "N16"
+    ],
+    "required_shift": "Tue PM",
+    "priority": 3
+  },
+  {
+    "id": "P100",
+    "condition": "cardiology",
+    "preferred_nurse_ids": [
+      "N45",
+      "N75"
+    ],
+    "required_shift": "Fri AM",
+    "priority": 3
+  }
+]

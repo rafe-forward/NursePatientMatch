@@ -1,0 +1,1542 @@
+[
+  {
+    "id": "N1",
+    "name": "Paula_1",
+    "skills": [
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Fri AM",
+      "Mon AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 3
+  },
+  {
+    "id": "N2",
+    "name": "Oscar_2",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Wed AM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 8
+  },
+  {
+    "id": "N3",
+    "name": "Zack_3",
+    "skills": [
+      "surgery",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N4",
+    "name": "Rachel_4",
+    "skills": [
+      "ICU"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Wed PM",
+      "Tue AM",
+      "Tue PM",
+      "Wed AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 3
+  },
+  {
+    "id": "N5",
+    "name": "Diana_5",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Fri AM",
+      "Fri PM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 2
+  },
+  {
+    "id": "N6",
+    "name": "Julia_6",
+    "skills": [
+      "ER"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Tue AM",
+      "Fri AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 4
+  },
+  {
+    "id": "N7",
+    "name": "Laura_7",
+    "skills": [
+      "ER",
+      "cardiology",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Fri AM",
+      "Mon AM",
+      "Thu PM",
+      "Tue PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 3
+  },
+  {
+    "id": "N8",
+    "name": "Tina_8",
+    "skills": [
+      "ER",
+      "geriatrics",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Mon AM",
+      "Thu AM",
+      "Tue PM",
+      "Mon PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 4
+  },
+  {
+    "id": "N9",
+    "name": "Uma_9",
+    "skills": [
+      "geriatrics",
+      "ICU",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Thu AM",
+      "Wed PM",
+      "Tue PM",
+      "Fri PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 1
+  },
+  {
+    "id": "N10",
+    "name": "Wendy_10",
+    "skills": [
+      "ICU",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Fri AM",
+      "Mon AM",
+      "Tue PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 1
+  },
+  {
+    "id": "N11",
+    "name": "Hannah_11",
+    "skills": [
+      "surgery"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Tue PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 7
+  },
+  {
+    "id": "N12",
+    "name": "Yara_12",
+    "skills": [
+      "ER"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Thu PM",
+      "Thu AM",
+      "Tue AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 10
+  },
+  {
+    "id": "N13",
+    "name": "Tina_13",
+    "skills": [
+      "surgery",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Thu PM",
+      "Mon AM",
+      "Thu AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 5
+  },
+  {
+    "id": "N14",
+    "name": "Zack_14",
+    "skills": [
+      "surgery",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Tue AM",
+      "Wed PM",
+      "Mon PM",
+      "Thu PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 1
+  },
+  {
+    "id": "N15",
+    "name": "Victor_15",
+    "skills": [
+      "ER"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Mon AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 1
+  },
+  {
+    "id": "N16",
+    "name": "Ian_16",
+    "skills": [
+      "ICU",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 5
+  },
+  {
+    "id": "N17",
+    "name": "Nina_17",
+    "skills": [
+      "surgery",
+      "ER",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Fri AM",
+      "Tue AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 5
+  },
+  {
+    "id": "N18",
+    "name": "Victor_18",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Thu PM",
+      "Mon AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 4
+  },
+  {
+    "id": "N19",
+    "name": "Diana_19",
+    "skills": [
+      "surgery"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Fri AM",
+      "Thu AM",
+      "Mon PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 3
+  },
+  {
+    "id": "N20",
+    "name": "Diana_20",
+    "skills": [
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Thu PM",
+      "Tue AM",
+      "Wed AM",
+      "Wed PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 2
+  },
+  {
+    "id": "N21",
+    "name": "Julia_21",
+    "skills": [
+      "geriatrics",
+      "cardiology",
+      "ER"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Tue PM",
+      "Thu PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 1
+  },
+  {
+    "id": "N22",
+    "name": "Zack_22",
+    "skills": [
+      "oncology",
+      "ER",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Fri AM",
+      "Thu AM",
+      "Tue PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 9
+  },
+  {
+    "id": "N23",
+    "name": "Mike_23",
+    "skills": [
+      "ICU",
+      "ER"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Wed AM",
+      "Tue AM",
+      "Thu PM",
+      "Mon PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 3
+  },
+  {
+    "id": "N24",
+    "name": "Uma_24",
+    "skills": [
+      "oncology"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Fri PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 1
+  },
+  {
+    "id": "N25",
+    "name": "Diana_25",
+    "skills": [
+      "oncology",
+      "pediatrics",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Fri PM",
+      "Mon PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 8
+  },
+  {
+    "id": "N26",
+    "name": "Zack_26",
+    "skills": [
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Mon PM",
+      "Tue PM",
+      "Fri AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 5
+  },
+  {
+    "id": "N27",
+    "name": "Julia_27",
+    "skills": [
+      "oncology",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Tue AM",
+      "Mon PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 2
+  },
+  {
+    "id": "N28",
+    "name": "Charlie_28",
+    "skills": [
+      "oncology",
+      "ER"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Fri PM",
+      "Fri AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 9
+  },
+  {
+    "id": "N29",
+    "name": "Tina_29",
+    "skills": [
+      "surgery",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Thu AM",
+      "Wed PM",
+      "Fri PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 9
+  },
+  {
+    "id": "N30",
+    "name": "Victor_30",
+    "skills": [
+      "cardiology",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Mon AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 9
+  },
+  {
+    "id": "N31",
+    "name": "Yara_31",
+    "skills": [
+      "surgery"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Tue AM",
+      "Mon PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 5
+  },
+  {
+    "id": "N32",
+    "name": "Ian_32",
+    "skills": [
+      "cardiology",
+      "oncology",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Thu PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 1
+  },
+  {
+    "id": "N33",
+    "name": "Xavier_33",
+    "skills": [
+      "oncology",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Fri PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 10
+  },
+  {
+    "id": "N34",
+    "name": "Victor_34",
+    "skills": [
+      "ICU",
+      "oncology",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Wed AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 5
+  },
+  {
+    "id": "N35",
+    "name": "Eli_35",
+    "skills": [
+      "ICU",
+      "ER"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Wed PM",
+      "Fri PM",
+      "Tue AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 7
+  },
+  {
+    "id": "N36",
+    "name": "Quinn_36",
+    "skills": [
+      "oncology",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Wed PM",
+      "Fri PM",
+      "Tue AM",
+      "Tue PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 4
+  },
+  {
+    "id": "N37",
+    "name": "Alice_37",
+    "skills": [
+      "pediatrics",
+      "cardiology",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Thu AM",
+      "Tue AM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 8
+  },
+  {
+    "id": "N38",
+    "name": "Victor_38",
+    "skills": [
+      "geriatrics",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Thu AM",
+      "Thu PM",
+      "Tue AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 10
+  },
+  {
+    "id": "N39",
+    "name": "Sam_39",
+    "skills": [
+      "cardiology",
+      "ICU",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Wed AM",
+      "Mon AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 1
+  },
+  {
+    "id": "N40",
+    "name": "Tina_40",
+    "skills": [
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Tue AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 3
+  },
+  {
+    "id": "N41",
+    "name": "Victor_41",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Tue AM",
+      "Tue PM",
+      "Thu AM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N42",
+    "name": "Xavier_42",
+    "skills": [
+      "ICU",
+      "cardiology",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Fri PM",
+      "Tue PM",
+      "Thu AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 8
+  },
+  {
+    "id": "N43",
+    "name": "Yara_43",
+    "skills": [
+      "ER",
+      "ICU",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Tue AM",
+      "Thu AM",
+      "Wed AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 8
+  },
+  {
+    "id": "N44",
+    "name": "Diana_44",
+    "skills": [
+      "oncology",
+      "ER",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Wed AM",
+      "Fri AM",
+      "Mon PM",
+      "Tue PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 2
+  },
+  {
+    "id": "N45",
+    "name": "Wendy_45",
+    "skills": [
+      "ER",
+      "geriatrics",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Fri AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 6
+  },
+  {
+    "id": "N46",
+    "name": "Julia_46",
+    "skills": [
+      "surgery",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Wed PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 7
+  },
+  {
+    "id": "N47",
+    "name": "Julia_47",
+    "skills": [
+      "geriatrics",
+      "ER",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Fri AM",
+      "Fri PM",
+      "Mon AM",
+      "Tue PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 9
+  },
+  {
+    "id": "N48",
+    "name": "Zack_48",
+    "skills": [
+      "surgery",
+      "ER"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Wed PM",
+      "Fri PM",
+      "Wed AM",
+      "Tue PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 5
+  },
+  {
+    "id": "N49",
+    "name": "Bob_49",
+    "skills": [
+      "oncology"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Wed PM",
+      "Mon AM",
+      "Tue PM",
+      "Wed AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 6
+  },
+  {
+    "id": "N50",
+    "name": "Mike_50",
+    "skills": [
+      "surgery",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Tue AM",
+      "Mon AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 7
+  },
+  {
+    "id": "N51",
+    "name": "Uma_51",
+    "skills": [
+      "pediatrics",
+      "surgery",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Fri PM",
+      "Tue AM",
+      "Mon PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 3
+  },
+  {
+    "id": "N52",
+    "name": "Laura_52",
+    "skills": [
+      "ER",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Thu AM",
+      "Fri PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 7
+  },
+  {
+    "id": "N53",
+    "name": "Alice_53",
+    "skills": [
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Thu PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 10
+  },
+  {
+    "id": "N54",
+    "name": "Diana_54",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Thu AM",
+      "Wed AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 1
+  },
+  {
+    "id": "N55",
+    "name": "Xavier_55",
+    "skills": [
+      "cardiology",
+      "ICU",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Thu AM",
+      "Wed PM",
+      "Tue AM",
+      "Mon AM",
+      "Wed AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 1
+  },
+  {
+    "id": "N56",
+    "name": "George_56",
+    "skills": [
+      "pediatrics",
+      "ICU",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Thu PM",
+      "Tue PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N57",
+    "name": "Wendy_57",
+    "skills": [
+      "geriatrics",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Mon AM",
+      "Tue AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 6
+  },
+  {
+    "id": "N58",
+    "name": "Victor_58",
+    "skills": [
+      "surgery"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Mon AM",
+      "Tue AM",
+      "Thu AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 5
+  },
+  {
+    "id": "N59",
+    "name": "Hannah_59",
+    "skills": [
+      "cardiology",
+      "geriatrics",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Mon PM",
+      "Wed AM",
+      "Wed PM",
+      "Thu AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 1
+  },
+  {
+    "id": "N60",
+    "name": "Nina_60",
+    "skills": [
+      "surgery",
+      "ER"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Wed PM",
+      "Thu PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 10
+  },
+  {
+    "id": "N61",
+    "name": "Yara_61",
+    "skills": [
+      "surgery",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Wed AM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 6
+  },
+  {
+    "id": "N62",
+    "name": "Wendy_62",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Wed PM",
+      "Mon AM",
+      "Fri PM",
+      "Tue PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 6
+  },
+  {
+    "id": "N63",
+    "name": "Zack_63",
+    "skills": [
+      "ER",
+      "geriatrics",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Wed PM",
+      "Fri PM",
+      "Thu PM",
+      "Mon PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 8
+  },
+  {
+    "id": "N64",
+    "name": "Nina_64",
+    "skills": [
+      "cardiology",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Tue PM",
+      "Fri PM",
+      "Wed PM",
+      "Thu PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 4
+  },
+  {
+    "id": "N65",
+    "name": "Quinn_65",
+    "skills": [
+      "oncology",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Mon AM",
+      "Tue PM",
+      "Wed AM",
+      "Wed PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 3
+  },
+  {
+    "id": "N66",
+    "name": "Eli_66",
+    "skills": [
+      "pediatrics",
+      "oncology",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Fri AM",
+      "Tue PM",
+      "Fri PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 3
+  },
+  {
+    "id": "N67",
+    "name": "George_67",
+    "skills": [
+      "ER",
+      "surgery",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Wed AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 6
+  },
+  {
+    "id": "N68",
+    "name": "Fiona_68",
+    "skills": [
+      "oncology"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Wed AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 6
+  },
+  {
+    "id": "N69",
+    "name": "Bob_69",
+    "skills": [
+      "ICU",
+      "pediatrics",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Tue PM",
+      "Thu AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 9
+  },
+  {
+    "id": "N70",
+    "name": "Fiona_70",
+    "skills": [
+      "ER"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Fri PM",
+      "Tue PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 9
+  },
+  {
+    "id": "N71",
+    "name": "Alice_71",
+    "skills": [
+      "surgery",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Thu AM",
+      "Fri PM",
+      "Wed AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 5
+  },
+  {
+    "id": "N72",
+    "name": "Ian_72",
+    "skills": [
+      "ER"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Tue AM",
+      "Tue PM",
+      "Thu AM",
+      "Wed PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 10
+  },
+  {
+    "id": "N73",
+    "name": "Paula_73",
+    "skills": [
+      "geriatrics",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Mon PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 8
+  },
+  {
+    "id": "N74",
+    "name": "Mike_74",
+    "skills": [
+      "pediatrics",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Fri PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N75",
+    "name": "Quinn_75",
+    "skills": [
+      "cardiology",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Thu AM",
+      "Tue AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 7
+  },
+  {
+    "id": "N76",
+    "name": "Sam_76",
+    "skills": [
+      "surgery"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Fri PM",
+      "Mon AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 7
+  },
+  {
+    "id": "N77",
+    "name": "Uma_77",
+    "skills": [
+      "geriatrics",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Thu AM",
+      "Thu PM",
+      "Wed PM",
+      "Tue AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 6
+  },
+  {
+    "id": "N78",
+    "name": "George_78",
+    "skills": [
+      "cardiology",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Fri AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 3
+  },
+  {
+    "id": "N79",
+    "name": "Fiona_79",
+    "skills": [
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Tue AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 4
+  },
+  {
+    "id": "N80",
+    "name": "Rachel_80",
+    "skills": [
+      "oncology",
+      "geriatrics",
+      "ER"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Fri PM",
+      "Mon AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 4
+  },
+  {
+    "id": "N81",
+    "name": "Xavier_81",
+    "skills": [
+      "ER",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Wed PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 5
+  },
+  {
+    "id": "N82",
+    "name": "Kevin_82",
+    "skills": [
+      "surgery",
+      "geriatrics",
+      "ER"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Mon PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 4
+  },
+  {
+    "id": "N83",
+    "name": "Charlie_83",
+    "skills": [
+      "cardiology",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Fri PM",
+      "Mon AM",
+      "Mon PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 6
+  },
+  {
+    "id": "N84",
+    "name": "Uma_84",
+    "skills": [
+      "ICU",
+      "geriatrics"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Wed PM",
+      "Thu AM"
+    ],
+    "max_patients": 3,
+    "current_stress": 8
+  },
+  {
+    "id": "N85",
+    "name": "Zack_85",
+    "skills": [
+      "oncology",
+      "geriatrics",
+      "ICU"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Tue PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 2
+  },
+  {
+    "id": "N86",
+    "name": "Diana_86",
+    "skills": [
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Tue PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 5
+  },
+  {
+    "id": "N87",
+    "name": "Paula_87",
+    "skills": [
+      "ER",
+      "geriatrics",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Fri PM",
+      "Tue AM",
+      "Fri AM",
+      "Mon PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 3
+  },
+  {
+    "id": "N88",
+    "name": "Nina_88",
+    "skills": [
+      "ICU"
+    ],
+    "available_shifts": [
+      "Thu AM",
+      "Fri AM",
+      "Fri PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 5
+  },
+  {
+    "id": "N89",
+    "name": "Quinn_89",
+    "skills": [
+      "ER",
+      "oncology",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Wed AM",
+      "Tue AM",
+      "Mon PM",
+      "Thu AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 5
+  },
+  {
+    "id": "N90",
+    "name": "Bob_90",
+    "skills": [
+      "ER",
+      "geriatrics",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Wed PM",
+      "Wed AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 2
+  },
+  {
+    "id": "N91",
+    "name": "Rachel_91",
+    "skills": [
+      "surgery"
+    ],
+    "available_shifts": [
+      "Thu AM",
+      "Mon AM",
+      "Fri AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N92",
+    "name": "Mike_92",
+    "skills": [
+      "pediatrics",
+      "oncology",
+      "surgery"
+    ],
+    "available_shifts": [
+      "Fri AM",
+      "Thu PM",
+      "Tue AM",
+      "Wed AM",
+      "Fri PM"
+    ],
+    "max_patients": 1,
+    "current_stress": 3
+  },
+  {
+    "id": "N93",
+    "name": "Mike_93",
+    "skills": [
+      "oncology"
+    ],
+    "available_shifts": [
+      "Mon AM",
+      "Wed PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 2
+  },
+  {
+    "id": "N94",
+    "name": "Nina_94",
+    "skills": [
+      "oncology",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Tue AM",
+      "Mon AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N95",
+    "name": "Nina_95",
+    "skills": [
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Wed AM",
+      "Thu PM",
+      "Wed PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 9
+  },
+  {
+    "id": "N96",
+    "name": "Rachel_96",
+    "skills": [
+      "pediatrics",
+      "ICU",
+      "cardiology"
+    ],
+    "available_shifts": [
+      "Fri PM",
+      "Mon AM",
+      "Mon PM"
+    ],
+    "max_patients": 2,
+    "current_stress": 6
+  },
+  {
+    "id": "N97",
+    "name": "Paula_97",
+    "skills": [
+      "cardiology",
+      "oncology"
+    ],
+    "available_shifts": [
+      "Tue AM",
+      "Tue PM",
+      "Mon PM"
+    ],
+    "max_patients": 3,
+    "current_stress": 9
+  },
+  {
+    "id": "N98",
+    "name": "Kevin_98",
+    "skills": [
+      "ER"
+    ],
+    "available_shifts": [
+      "Mon PM",
+      "Thu AM"
+    ],
+    "max_patients": 1,
+    "current_stress": 9
+  },
+  {
+    "id": "N99",
+    "name": "Diana_99",
+    "skills": [
+      "ICU",
+      "ER"
+    ],
+    "available_shifts": [
+      "Thu PM",
+      "Thu AM",
+      "Mon PM",
+      "Fri AM",
+      "Wed AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 6
+  },
+  {
+    "id": "N100",
+    "name": "Tina_100",
+    "skills": [
+      "surgery",
+      "oncology",
+      "pediatrics"
+    ],
+    "available_shifts": [
+      "Tue PM",
+      "Wed AM"
+    ],
+    "max_patients": 2,
+    "current_stress": 5
+  }
+]
