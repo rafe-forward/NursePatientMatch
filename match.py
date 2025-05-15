@@ -1,8 +1,8 @@
 from nurse_patient_classes import Nurse, NurseBuilder, PatientBuilder,Patient
 import json
-from hungarian_algorithm import algorithm
 from scipy.optimize import linear_sum_assignment
 import numpy as np
+from ortools.linear_solver import pywraplp
 builder = NurseBuilder()
 
 patient_list = []
@@ -59,7 +59,7 @@ with open('nurses.json', 'r') as f:
 G = {}
 ctr =0
 
-
+print("Hallo")
 nurse_ids = [n.id for n in nurse_list]
 patient_ids = [p.id for p in patient_list]
 score_matrix = np.zeros((len(nurse_ids), len(patient_ids)))
@@ -69,6 +69,51 @@ for i, nurse in enumerate(nurse_list):
         score_matrix[i][j] = -calculate_score(nurse, patient)
 
 row_ind, col_ind = linear_sum_assignment(score_matrix)
-
+final_Score = 0
 for i, j in zip(row_ind, col_ind):
     print(f"Nurse {nurse_ids[i]} → Patient {patient_ids[j]}, Score: {-score_matrix[i][j]}")
+    final_Score += score_matrix[i][j]
+
+print(final_Score)
+solver = pywraplp.Solver.CreateSolver("SCIP")
+if not solver: 
+    raise Exception("SCIP solver is not available")
+n = len(nurse_list)
+m = len(patient_list)
+
+x = {}
+for i in range(n):
+    for j in range(m):
+        nurse = nurse_list[i]
+        patient = patient_list[j]
+        score = calculate_score(nurse,patient)
+
+        if patient.required_shift in nurse.available_shifts:
+            x[i,j] = solver.IntVar(0,1,f'x[{i},{j}]')
+        else:
+            x[i,j] = solver.IntVar(0,0, f'x[{i},{j}]')
+for j in range(m):
+    solver.Add(solver.Sum(x[i,j] for j in range(m)) <= nurse_list[i].max_patients)
+for i in range(n):
+    solver.Add(solver.Sum(x[i,j] for j in range(m)) <= nurse_list[i].max_patients)
+
+objective = solver.Objective()
+for i in range(n):
+    for j in range(m):
+        score = calculate_score(nurse_list[i],patient_list[j])
+        objective.SetCoefficient(x[i,j],score)
+objective.SetMaximization()
+print("R")
+status = solver.Solve()
+
+if status == pywraplp.Solver.OPTIMAL:
+    print("Optimal assignment found:")
+    for i in range(n):
+        for j in range(m):
+            if x[i, j].solution_value() > 0.5:
+                nurse = nurse_list[i]
+                patient = patient_list[j]
+                print(f"Nurse {nurse.id} → Patient {patient.id}, Score: {calculate_score(nurse, patient)}")
+    print("Total score:", objective.Value())
+else:
+    print("No optimal solution found.")
