@@ -22,7 +22,5 @@ def loadNurses(path):
         for nur in data:
             nurse_builder = NurseBuilder()
             nurse = nurse_builder.set_id(str(nur["id"])).set_name(nur["name"]).set_skills(nur["skills"]).set_available_shifts(nur["available_shifts"]).set_max_patients(nur["max_patients"]).set_current_stress(nur["current_stress"]).build()
-            print(f"appending nurse {nurse.id}")
             nurse_list.append(nurse)
-    print(nurse_list)
     return nurse_list

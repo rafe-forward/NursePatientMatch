@@ -1,6 +1,6 @@
 import os
 import json
-def submitAssignment(file_path,data):
+def submitAssignment(file_path, data):
     if os.path.exists(file_path):
         with open(file_path, 'r') as json_file:
             try:
@@ -12,9 +12,17 @@ def submitAssignment(file_path,data):
     else:
         assignment_list = []
 
-    assignment_list.append(data)
+    if isinstance(data, list):
+        assignment_list.extend(data)
+    else:
+        assignment_list.append(data)
 
     with open(file_path, 'w') as json_file:
         json.dump(assignment_list, json_file, indent=4)
 
-    print(f"Assignment successfully appended to '{file_path}'")
+    print(f"Appended {len(data) if isinstance(data, list) else 1} assignment(s) to '{file_path}'")
+
+def submitTempAssignment(file_path,data):
+    with open(file_path, "w") as json_file:
+        json.dump(data,json_file,indent=4)
+    

@@ -95,6 +95,22 @@ class PatientBuilder:
             self.required_shift,
             self.priority
         )
+class Assignment:
+    def __init__(self, nurse_id, nurse_name,patient_id,time,score):
+        self.nurse_id = nurse_id
+        self.nurse_name = nurse_name
+        self.patient_id = patient_id
+        self.time = time
+        self.score = score
+    def to_dict(self):
+        data = {
+            "nurse_id": f"{self.nurse_id}",
+            "nurse_name": f"{self.nurse_name}",
+            "patient_id": f"{self.patient_id}",
+            "time": f"{self.time}",
+            "score": f"{self.score}"
+        }
+        return data
 class Nurse_Patient_Val:
     def __init__(self, nurse, patient):
         self.nurse = nurse
