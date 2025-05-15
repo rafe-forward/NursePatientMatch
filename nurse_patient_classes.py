@@ -6,6 +6,7 @@ class Nurse:
         self.available_shifts = available_shifts
         self.max_patients = max_patients
         self.current_stress = current_stress
+        self.assigned_shifts = []
     def __str__(self):
         return f"Name: {self.name}"
 class NurseBuilder:
@@ -102,7 +103,7 @@ class Nurse_Patient_Val:
 
     def calculate_score(self):
         score = 50
-        
+
         stress_score = (self.nurse.current_stress ** 2) / 2
         score -= stress_score
 

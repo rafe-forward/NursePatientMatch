@@ -1,0 +1,23 @@
+[
+  {"id": "1", "name": "Alice", "skills": ["Cardiology", "Oncology"], "available_shifts": ["Mon AM", "Tue PM", "Wed AM"], "max_patients": 3, "current_stress": 2},
+  {"id": "2", "name": "Bob", "skills": ["Neurology", "Pediatrics"], "available_shifts": ["Mon AM", "Tue AM"], "max_patients": 2, "current_stress": 5},
+  {"id": "3", "name": "Clara", "skills": ["Oncology", "Orthopedics"], "available_shifts": ["Wed AM", "Thu PM"], "max_patients": 3, "current_stress": 3},
+  {"id": "4", "name": "David", "skills": ["Geriatrics", "Psychiatry"], "available_shifts": ["Mon PM", "Fri AM"], "max_patients": 2, "current_stress": 4},
+  {"id": "5", "name": "Eve", "skills": ["Cardiology", "Pediatrics"], "available_shifts": ["Tue PM", "Thu AM"], "max_patients": 4, "current_stress": 1},
+  {"id": "6", "name": "Frank", "skills": ["Neurology", "Orthopedics"], "available_shifts": ["Wed PM", "Fri PM"], "max_patients": 3, "current_stress": 3},
+  {"id": "7", "name": "Grace", "skills": ["Psychiatry", "Oncology"], "available_shifts": ["Mon AM", "Thu AM"], "max_patients": 2, "current_stress": 5},
+  {"id": "8", "name": "Hank", "skills": ["Geriatrics", "Cardiology"], "available_shifts": ["Tue AM", "Wed AM"], "max_patients": 3, "current_stress": 2},
+  {"id": "9", "name": "Ivy", "skills": ["Pediatrics", "Orthopedics"], "available_shifts": ["Thu PM", "Fri PM"], "max_patients": 3, "current_stress": 1},
+  {"id": "10", "name": "Jack", "skills": ["Neurology", "Psychiatry"], "available_shifts": ["Mon PM", "Wed PM"], "max_patients": 2, "current_stress": 6},
+  {"id": "11", "name": "Karen", "skills": ["Geriatrics", "Cardiology"], "available_shifts": ["Tue AM", "Fri AM"], "max_patients": 3, "current_stress": 2},
+  {"id": "12", "name": "Leo", "skills": ["Orthopedics", "Oncology"], "available_shifts": ["Mon AM", "Thu PM"], "max_patients": 2, "current_stress": 4},
+  {"id": "13", "name": "Mona", "skills": ["Cardiology", "Neurology"], "available_shifts": ["Wed AM", "Thu AM"], "max_patients": 2, "current_stress": 3},
+  {"id": "14", "name": "Nick", "skills": ["Pediatrics", "Psychiatry"], "available_shifts": ["Tue PM", "Fri PM"], "max_patients": 4, "current_stress": 1},
+  {"id": "15", "name": "Olive", "skills": ["Oncology", "Geriatrics"], "available_shifts": ["Mon PM", "Thu PM"], "max_patients": 2, "current_stress": 3},
+  {"id": "16", "name": "Paul", "skills": ["Cardiology", "Orthopedics"], "available_shifts": ["Wed PM", "Fri AM"], "max_patients": 3, "current_stress": 2},
+  {"id": "17", "name": "Quinn", "skills": ["Neurology", "Pediatrics"], "available_shifts": ["Mon AM", "Thu AM"], "max_patients": 3, "current_stress": 4},
+  {"id": "18", "name": "Rachel", "skills": ["Psychiatry", "Geriatrics"], "available_shifts": ["Tue AM", "Wed AM"], "max_patients": 2, "current_stress": 2},
+  {"id": "19", "name": "Steve", "skills": ["Orthopedics", "Oncology"], "available_shifts": ["Thu AM", "Fri PM"], "max_patients": 2, "current_stress": 3},
+  {"id": "20", "name": "Tina", "skills": ["Cardiology", "Neurology"], "available_shifts": ["Mon AM", "Tue PM"], "max_patients": 3, "current_stress": 1},
+  {"id": "21", "name": "Stressy", "skills": ["Cardiology","Neurology","Psychiatry", "Geriatrics"], "available_shifts": ["Mon AM", "Tue PM", "Fri AM","Mon PM", "Thu PM"], "max_patients": 5, "current_stress": 5}
+]

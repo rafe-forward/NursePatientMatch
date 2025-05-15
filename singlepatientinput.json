@@ -1,0 +1,13 @@
+[
+  {
+    "id": "P1",
+    "condition": "oncology",
+    "preferred_nurse_ids": [
+      "N98",
+      "N33",
+      "N74"
+    ],
+    "required_shift": "Thu PM",
+    "priority": 1
+  }
+]
