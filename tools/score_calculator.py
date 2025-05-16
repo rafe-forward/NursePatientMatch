@@ -18,6 +18,6 @@ def calculate_score(nurse, patient):
     if patient.required_shift in nurse.available_shifts:
         score += 20
     else:
-        score -= 40
+        score -= 100
 
     return max(score, 0.1)

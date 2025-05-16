@@ -3,7 +3,7 @@ from strategies.automultipatient_strategy import AutoMultiPatientSolution
 from tools.loaders import loadPatients, loadNurses
 from tools.assignment_handler import submitTempAssignment, submitAssignment
 from nurse_patient_classes import Nurse, NurseBuilder, PatientBuilder, Patient
-
+from strategies.manualmultipatient_strategy import ManualMultiPatientSolution
 """
     Scheduling App!
 
@@ -49,15 +49,14 @@ class SchedulerApp:
         else:
             while True:
                 multi_sol_type = input(
-                    "To match patients manually enter 0, to match automatically enter 1: "
+                    "To match patients manually enter 0, to match automatically enter 1, or 'exit' to exit: "
                 )
                 if multi_sol_type == "0":
-                    print("not implemented")
-                    return  # ManualMultiPatientSolution(self.nurse_list,patients) NEED TO IMPLEMENT
+                    return ManualMultiPatientSolution(self.nurse_list,patients,return_limit=10)
                 if multi_sol_type == "1":
-                    return AutoMultiPatientSolution(self.nurse_list, patients)
+                    return AutoMultiPatientSolution(self.nurse_list, patients, "cp")
                 if multi_sol_type == "exit":
-                    break
+                    return None
             return None
 
 
@@ -71,9 +70,9 @@ class SchedulerApp:
         if isinstance(strategy, SinglePatientSolution):
             self.handle_single_patient(results, patients[0])
         elif isinstance(strategy, AutoMultiPatientSolution):
-            self.handle_automulti_patients(results, patients)
+            self.handle_automulti_patients(results)
         else:
-            self.handle_multi_patient(results)
+            self.handle_multi_patient(results, patients)
 
 
     """
@@ -149,9 +148,11 @@ class SchedulerApp:
         if not results:
             print("No nurse matches found")
         else:
+            finalscore = 0
             data = []
             for nurse, patient, score in results:
                 nurse.available_shifts.remove(patient.required_shift)
+                finalscore += score
                 data.append(
                     {
                         "nurse_id": nurse.id,
@@ -162,6 +163,7 @@ class SchedulerApp:
                         "nurse_stress": nurse.current_stress,
                     }
                 )
+            print(f"Final score: {finalscore}")
             submitTempAssignment("verifyout.json", data)
             while True:
                 print(
@@ -174,6 +176,7 @@ class SchedulerApp:
                 elif ans.strip() == "0":
                     return None
 
-    def handle_multi_patient(self, result):
-        # Placeholder for multi-patient logic later
-        pass
+    def handle_multi_patient(self, result, patients):
+        for idx, (patient, scored_nurses) in enumerate(result, start=1):
+            print(f"\n[{idx}/{len(result)}] Matching for Patient ID: {patient.id}, Condition: {patient.condition}, Shift: {patient.required_shift}")
+            self.handle_single_patient(scored_nurses, patient)

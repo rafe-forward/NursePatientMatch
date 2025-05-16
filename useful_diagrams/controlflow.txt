@@ -1,0 +1,46 @@
+START
+  │
+  ▼
+Load nurses & patients from JSON
+  │
+  ▼
+Display strategy prompt (manual / auto / exit)
+  │
+  ├──▶ exit → END
+  │
+  ▼
+Initialize strategy object
+  │
+  ├──▶ SinglePatientSolution
+  │     └── handle_single_patient:
+  │            - Show nurse matches
+  │            - User selects nurse
+  │            - assign_nurse()
+  │
+  ├──▶ AutoMultiPatientSolution
+  │     └── handle_automulti_patients:
+  │            - Auto-match all
+  │            - Temp save
+  │            - Confirm + submit
+  │
+  └──▶ ManualMultiPatientSolution
+         └── solve():
+               ┌─────────────────────────────────────┐
+               │ For each patient in patient_list:   │
+               │   └─> Create SinglePatientSolution  │
+               │        └─> call solve()             │
+               │             └─> return top N nurses │
+               │   └─> store (patient, scored_nurses)│
+               └─────────────────────────────────────┘
+         └── return results to handle_multi_patient
+               └─> For each (patient, scored_nurses):
+                       └─> Show patient info
+                       └─> Show nurses
+                       └─> User selects
+                       └─> assign_nurse()
+  │
+  ▼
+Back to strategy prompt (loop)
+  │
+  ▼
+exit → END

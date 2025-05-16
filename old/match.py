@@ -119,7 +119,6 @@ for i in range(n):
         objective.SetCoefficient(x[i,j],score)
     objective.SetCoefficient(num_patients[i],-stress_penalty_weight * nurse_list[i].current_stress)
 objective.SetMaximization()
-print("R")
 status = solver.Solve()
 
 if status == pywraplp.Solver.OPTIMAL:

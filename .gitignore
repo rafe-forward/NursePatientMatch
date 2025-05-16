@@ -24,3 +24,6 @@ virtualenv/
 
 # OS-generated files
 .DS_Store
+
+#data
+data/
