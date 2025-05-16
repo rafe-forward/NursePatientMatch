@@ -9,6 +9,9 @@ class Nurse:
         self.assigned_shifts = []
     def __str__(self):
         return f"Name: {self.name}"
+    
+#Use nurse builder for future scalability. Plans for additional attributes which may or may not be implemented
+#for every instance
 class NurseBuilder:
     def __init__(self):
         self.id = None
@@ -58,7 +61,7 @@ class Patient:
         return f"Patient ID: {self.id}, Condition: {self.condition}, Priority: {self.priority}"
 
 
-###Patient Builder
+"Patient Builder, similar to nurse builder, plans of future attribute expansion so keep as builder"
 class PatientBuilder:
     def __init__(self):
         self.id = None
@@ -95,6 +98,7 @@ class PatientBuilder:
             self.required_shift,
             self.priority
         )
+"""Currently not in use, could be very helpful for future assignment processing"""
 class Assignment:
     def __init__(self, nurse_id, nurse_name,patient_id,time,score):
         self.nurse_id = nurse_id
@@ -111,32 +115,4 @@ class Assignment:
             "score": f"{self.score}"
         }
         return data
-class Nurse_Patient_Val:
-    def __init__(self, nurse, patient):
-        self.nurse = nurse
-        self.patient = patient
-        self.score = self.calculate_score()
-
-    def calculate_score(self):
-        score = 50
-
-        stress_score = (self.nurse.current_stress ** 2) / 2
-        score -= stress_score
-
-        if self.nurse.id in self.patient.preferred_nurse_ids:
-            score += 20
-
-        if self.patient.condition in self.nurse.skills:
-            score += 20
-
-        if self.patient.required_shift in self.nurse.available_shifts:
-            score += 20
-        else:
-            score -= 40
-
-        return max(score, 0.1)
-
-    def __str__(self):
-        return f"Nurse: {self.nurse.name}, Patient ID: {self.patient.id}, Score: {self.score}"
-
         

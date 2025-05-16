@@ -1,5 +1,13 @@
 import os
 import json
+
+"""
+submitAssignment:
+    function passed in to schedueler app in main then later used in both singlesolver and automultisolver
+    Use to place assigned data from x into assignments.json
+submitTempAssignment:
+    Used to place data from automultisolver in verifyout before it is confirmed by user
+"""
 def submitAssignment(file_path, data):
     if os.path.exists(file_path):
         with open(file_path, 'r') as json_file:

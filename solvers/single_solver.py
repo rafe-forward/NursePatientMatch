@@ -33,7 +33,6 @@ class SingleScheduleSolver():
         else:
             score -= 40
         return max(score, 0.1)
-    #
     def match(self):
         nurse_scores = [(nurse, self.score(nurse,self.patient)) for nurse in self.nurses]
         nurse_scores.sort(key=lambda x: x[1], reverse= True)

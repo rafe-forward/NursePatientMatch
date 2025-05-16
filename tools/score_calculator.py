@@ -1,3 +1,7 @@
+"""
+    Arbitrary score calculation factoring in condition preference stress and available shifts
+"""
+
 def calculate_score(nurse,patient):
     score = 50
 

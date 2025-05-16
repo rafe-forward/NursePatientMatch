@@ -3,29 +3,59 @@ from strategies.automultipatient_strategy import AutoMultiPatientSolution
 from tools.loaders import loadPatients, loadNurses
 from tools.assignment_handler import submitTempAssignment, submitAssignment
 from nurse_patient_classes import Nurse, NurseBuilder, PatientBuilder, Patient
+"""
+    Schedueling App!
 
+    init vars:
+        nurse_path: Path for json list of all nurses to be logged in
+        patient_path: Path for json list of all patients to be logged in
+        assignment_path: Path for output json of assignment list
+    
+    functions:
+        run:
+            passes strategy selection to select strategy
+            receives a Solution Object that it then passes onto process
+        select_strategy:
+            allows users to select the strategy for assigning patients
+            With a single patient it automatically passes it onto single solver
+            returns a Solution Object
+        process_strategy:
+            passes solution object into its correct submition handler
+        
+        handle_single_patient:
+            inputs:
+                scored_nurses: list of nurses sorted by score match to patient
+                patient: patient object
+            Allows users to select which of the top return_limit (singlePatientSolution var) nurses
+            Once selected passes nurse, patient and score to assign_nurse
+        assign_nurse:
+            called from handling of single patient
+            inputs:
+                nurse: nurse object
+                patient: patient object
+                score: Score between patient and Nurse
+            logs nurse into the json specified by assignment path
+            adds stress to nurse and removes shift from nurses available shifts
+        handle_automulti_patients
+            inputs:
+                results:
+                    tuple containing a list of (nurse,patient,score)
+            logs all assignments into a temp file for user verification then logs to specified assignment path
+
+"""
 class SchedulerApp:
-    def __init__(self, nurse_path, patient_loader, assign_logger):
+    def __init__(self, nurse_path, patient_path, assignment_path):
         self.nurse_list = loadNurses(nurse_path)
-        self.patient_loader = patient_loader
-        self.log_assignment = assign_logger
+        self.patients = loadPatients(patient_path)
+        self.assignment_path = assignment_path
 
     def run(self):
         while True:
-            path = input("Input path to patient.json (or 'exit'): ").strip()
-            if path.lower() == "exit":
-                break
-            try:
-                patients = self.patient_loader(path)
-                strategy = self.select_strategy(patients)
-                if strategy is None:
-                    print("Patient matching cancelled")
-                    return
-                self.process_strategy(strategy, patients)
-            except FileNotFoundError:
-                print("File not found. Try again.")
-            except Exception as e:
-                print(f"Unexpected error: {type(e).__name__} - {e}")
+            strategy = self.select_strategy(self.patients)
+            if strategy is None:
+                print("Patient matching cancelled")
+                return
+            self.process_strategy(strategy, self.patients)
 
     def select_strategy(self, patients):
         if len(patients) == 1:
@@ -77,7 +107,7 @@ class SchedulerApp:
         if patient.required_shift in nurse.available_shifts:
             nurse.available_shifts.remove(patient.required_shift)
 
-        self.log_assignment("assignments.json", {
+        submitAssignment(self.assignment_path, {
             "nurse_id": nurse.id,
             "nurse_name": nurse.name,
             "patient_id": patient.id,
@@ -86,26 +116,27 @@ class SchedulerApp:
             "stress_level": nurse.current_stress
         })
 
-    def handle_automulti_patients(self,results,patients):
+    def handle_automulti_patients(self,results):
         if not results:
             print("No nurse matches found")
         else:
             data = []
-            for assigned_nurse,assigned_patient,score in results:
+            for nurse,patient,score in results:
+                nurse.available_shifts.remove(patient.required_shift)
                 data.append({
-                    "nurse_id": assigned_nurse.id,
-                    "nurse_name": assigned_nurse.name,
-                    "patient_id": assigned_patient.id,
-                    "time": assigned_patient.required_shift,
+                    "nurse_id": nurse.id,
+                    "nurse_name": nurse.name,
+                    "patient_id": patient.id,
+                    "time": patient.required_shift,
                     "score": score,
-                    "nurse_stress": assigned_nurse.current_stress
+                    "nurse_stress": nurse.current_stress
                 })
             submitTempAssignment("verifyout.json",data)
             while True:
                 print("Inspect Verifyout.json the enter 1 to approve results and 0 to reject")
                 ans = input()
                 if ans.strip() == "1":
-                    self.log_assignment("assignments.json", data)
+                    submitAssignment(self.assignment_path, data)
                     break
                 elif ans.strip() == "0":
                     return None

@@ -1,5 +1,12 @@
 import json
 from nurse_patient_classes import PatientBuilder, NurseBuilder
+"""
+    LoadPatients
+        Goes through specified JSON File and builds then returns a list of patient objects
+        Example patient input:
+        
+
+"""
 def loadPatients(path):
     patient_list = []
     with open(path, 'r') as f:
