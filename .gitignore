@@ -1,2 +1,26 @@
-/__pycache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+*.egg-info/
+*.dist-info/
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated files
 .DS_Store

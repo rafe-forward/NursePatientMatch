@@ -1,7 +1,9 @@
-from solution_strategy import SinglePatientSolution, AutoMultiPatientSolution
-from loaders import loadPatients, loadNurses
-from assignment_handler import submitTempAssignment
-from nurse_patient_classes import Nurse, NurseBuilder, PatientBuilder,Patient, Assignment
+from strategies.single_strategy import SinglePatientSolution
+from strategies.automultipatient_strategy import AutoMultiPatientSolution
+from tools.loaders import loadPatients, loadNurses
+from tools.assignment_handler import submitTempAssignment, submitAssignment
+from nurse_patient_classes import Nurse, NurseBuilder, PatientBuilder, Patient
+
 class SchedulerApp:
     def __init__(self, nurse_path, patient_loader, assign_logger):
         self.nurse_list = loadNurses(nurse_path)
@@ -30,9 +32,10 @@ class SchedulerApp:
             return SinglePatientSolution(self.nurse_list, patients[0], return_limit=10)
         else:
             while True:
-                multi_sol_type = input("To match patients manually enter 0, to match automatically enter 1")
+                multi_sol_type = input("To match patients manually enter 0, to match automatically enter 1: ")
                 if multi_sol_type == "0":
-                    return ManualMultiPatientSolution(self.nurse_list,patients)
+                    print("not implemented")
+                    return #ManualMultiPatientSolution(self.nurse_list,patients) NEED TO IMPLEMENT
                 if multi_sol_type == "1":
                     return AutoMultiPatientSolution(self.nurse_list,patients)
                 if multi_sol_type == "exit":

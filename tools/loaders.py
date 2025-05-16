@@ -17,7 +17,7 @@ def loadPatients(path):
 
 def loadNurses(path):
     nurse_list = []
-    with open("nurses.json", 'r') as f:
+    with open(path, 'r') as f:
         data = json.load(f)
         for nur in data:
             nurse_builder = NurseBuilder()

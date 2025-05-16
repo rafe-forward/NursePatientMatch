@@ -1,0 +1,2 @@
+Old process I used to run
+Keeping it cause there is some useful solutions I did not end up implementing in main

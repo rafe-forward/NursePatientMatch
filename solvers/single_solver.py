@@ -1,8 +1,21 @@
+#Single Solver class
+"""
+    init variables:
+        nurses
+            -list of nurse objects
+        patient
+            -single patient object
+        return limit
+            -int specifies amount to be returned from search
+    return format:
+        list of nurse objects sorted by score
+"""
 class SingleScheduleSolver():
     def __init__(self,nurses,patient, return_limit):
         self.nurses = nurses
         self.patient = patient
         self.return_limit = return_limit
+    #Specific score calculation for single patients, otherwise can import from tools
     def score(self,nurse,patient):
         score = 50
 
@@ -20,6 +33,7 @@ class SingleScheduleSolver():
         else:
             score -= 40
         return max(score, 0.1)
+    #
     def match(self):
         nurse_scores = [(nurse, self.score(nurse,self.patient)) for nurse in self.nurses]
         nurse_scores.sort(key=lambda x: x[1], reverse= True)
