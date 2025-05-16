@@ -3,7 +3,7 @@ import json
 
 """
 submitAssignment:
-    function passed in to schedueler app in main then later used in both singlesolver and automultisolver
+    function passed in to scheduler app in main then later used in both singlesolver and automultisolver
     Use to place assigned data from x into assignments.json
 submitTempAssignment:
     Used to place data from automultisolver in verifyout before it is confirmed by user

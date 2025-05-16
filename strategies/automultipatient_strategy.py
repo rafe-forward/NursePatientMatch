@@ -1,5 +1,6 @@
 from .strategy_base import SolutionStrategy
 from solvers.automulti_solver import AutoMultiPatientSolver
+
 """
     Solution Strategy for AutoMulti
     AutoMulti uses OR tools to match patients to nurses by score
@@ -19,10 +20,13 @@ from solvers.automulti_solver import AutoMultiPatientSolver
             #Calculated Nurse Patient compatibility score
 
 """
+
+
 class AutoMultiPatientSolution(SolutionStrategy):
-    def __init__(self,nurses, patients):
+    def __init__(self, nurses, patients):
         self.nurses = nurses
         self.patients = patients
+
     def solve(self):
-        solver = AutoMultiPatientSolver(self.nurses,self.patients)
+        solver = AutoMultiPatientSolver(self.nurses, self.patients)
         return solver.match()
