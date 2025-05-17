@@ -12,7 +12,7 @@ from strategies.manualmultipatient_strategy import ManualMultiPatientSolution
         patient_path: Path for json list of all patients to be logged in
         assignment_path: Path for output json of assignment list
 """
-
+MODELTYPE = "cp"
 
 class SchedulerApp:
     def __init__(self, nurse_path, patient_path, assignment_path):
@@ -54,7 +54,7 @@ class SchedulerApp:
                 if multi_sol_type == "0":
                     return ManualMultiPatientSolution(self.nurse_list,patients,return_limit=10)
                 if multi_sol_type == "1":
-                    return AutoMultiPatientSolution(self.nurse_list, patients, "cp")
+                    return AutoMultiPatientSolution(self.nurse_list, patients, MODELTYPE)
                 if multi_sol_type == "exit":
                     return None
             return None
@@ -145,12 +145,14 @@ class SchedulerApp:
     """
 
     def handle_automulti_patients(self, results):
-        if not results:
+        assigned_patients = results[0]
+        extra_patients = results[1]
+        if not assigned_patients:
             print("No nurse matches found")
         else:
             finalscore = 0
             data = []
-            for nurse, patient, score in results:
+            for nurse, patient, score in assigned_patients:
                 nurse.available_shifts.remove(patient.required_shift)
                 finalscore += score
                 data.append(
@@ -163,6 +165,8 @@ class SchedulerApp:
                         "nurse_stress": nurse.current_stress,
                     }
                 )
+            if extra_patients:
+                self.process_strategy(ManualMultiPatientSolution(self.nurse_list,extra_patients,10),extra_patients)
             print(f"Final score: {finalscore}")
             submitTempAssignment("verifyout.json", data)
             while True:

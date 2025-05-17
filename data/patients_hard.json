@@ -16,7 +16,6 @@
   { "id": 15, "condition": "Cardiology", "preferred_nurse_ids": ["1", "11", "20"], "required_shift": "Thu PM", "priority": 4},
   { "id": 16, "condition": "Neurology", "preferred_nurse_ids": ["2", "13", "17"], "required_shift": "Fri AM", "priority": 3},
   { "id": 17, "condition": "Oncology", "preferred_nurse_ids": ["3", "7", "19"], "required_shift": "Tue PM", "priority": 2},
-  { "id": 18, "condition": "Geriatrics", "preferred_nurse_ids": ["4", "11", "15"], "required_shift": "Thu AM", "priority": 2},
   { "id": 19, "condition": "Psychiatry", "preferred_nurse_ids": ["7", "10", "14"], "required_shift": "Wed PM", "priority": 3},
   { "id": 20, "condition": "Pediatrics", "preferred_nurse_ids": ["2", "9", "14"], "required_shift": "Fri PM", "priority": 1},
   { "id": 21, "condition": "Orthopedics", "preferred_nurse_ids": ["6", "12", "19"], "required_shift": "Thu PM", "priority": 2},

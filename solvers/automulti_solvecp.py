@@ -51,12 +51,15 @@ class AutoMultiPatientSolverCP:
                     score_matrix[i,j] = score
                     valid_pairs.append((i,j))
         # Constraint: Each patient must be assigned to exactly one nurse
-
-        for j in range(m):
-            valid_for_j = [x[i,j] for i in range(n) if (i,j) in x]
-            if not valid_for_j:
-                raise Exception(f"No valid nurses for patient {self.patients[j].id}")
-            model.Add(sum(valid_for_j) == 1)
+        # unvalidpats =[]
+        # for j in range(m):
+        #     valid_for_j = [x[i,j] for i in range(n) if (i,j) in x]
+        #     if not valid_for_j:
+        #         unvalidpats.append(self.patients[j])
+        #         #raise Exception(f"No valid nurses for patient {self.patients[j].id}")
+        #     model.Add(sum(valid_for_j) == 1)
+        # for i in unvalidpats:
+        #     print(i)
         # Constraint: Nurse can only take 1 patient per shift
         for i in range(n):
             nurse = self.nurses[i]
@@ -73,7 +76,7 @@ class AutoMultiPatientSolverCP:
             if assigned:
                 model.Add(sum(assigned) <= self.nurses[i].max_patients)
         
-        # Constraint: currnet + 2 per patients <= 10
+        # Constraint: current + 2 per patients <= 10
         for i in range(n):
             assigned = [x[i,j] for j in range(m) if (i,j) in x]
             total_stress_expr = 2 * sum(assigned) + self.nurses[i].current_stress
@@ -86,6 +89,7 @@ class AutoMultiPatientSolverCP:
         # Solve
         status = solver.Solve(model)
         assignments = []
+        extra_patients = []
         if status in [cp_model.OPTIMAL, cp_model.FEASIBLE]:
             for (i, j) in valid_pairs:
                 if solver.Value(x[i, j]) == 1:
@@ -93,6 +97,16 @@ class AutoMultiPatientSolverCP:
                     patient = self.patients[j]
                     score = score_matrix[i, j]
                     assignments.append((nurse, patient, score))
+            print(f"{len(assignments)} patients assigned out of {len(self.patients)} patients")
+            if (len(assignments) < len(self.patients)):
+                print("Not all patients assigned, passing to extra processing")
         else:
             print("No feasible solution found.")
-        return assignments
+        
+        assigned_patient_ids = {assignment[1].id for assignment in assignments}
+        for patient in self.patients:
+            if patient.id not in assigned_patient_ids:
+                extra_patients.append(patient)
+
+
+        return (assignments,extra_patients)
