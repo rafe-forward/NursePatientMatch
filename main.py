@@ -22,8 +22,8 @@ def select_strategy(nurses, patients):
 
 def main():
     app = SchedulerApp(
-        nurse_path="./data/nurses_hard.json",
-        patient_path="./data/patients_hard.json",
+        nurse_path="./data/test_nurses.json",
+        patient_path="./data/test_patients.json",
         assignment_path="./assignments.json"
     )
     app.run()

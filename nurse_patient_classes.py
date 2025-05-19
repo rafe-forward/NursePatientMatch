@@ -75,6 +75,10 @@ class Patient:
 
     def __str__(self):
         return f"Patient ID: {self.id}, Condition: {self.condition}, Priority: {self.priority}"
+    def __lt__(self,other):
+        if self.id > other.id:
+            return False
+        return True
 
 
 "Patient Builder, similar to nurse builder, plans of future attribute expansion so keep as builder"

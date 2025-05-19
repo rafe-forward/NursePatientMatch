@@ -51,15 +51,10 @@ class AutoMultiPatientSolverCP:
                     score_matrix[i,j] = score
                     valid_pairs.append((i,j))
         # Constraint: Each patient must be assigned to exactly one nurse
-        # unvalidpats =[]
-        # for j in range(m):
-        #     valid_for_j = [x[i,j] for i in range(n) if (i,j) in x]
-        #     if not valid_for_j:
-        #         unvalidpats.append(self.patients[j])
-        #         #raise Exception(f"No valid nurses for patient {self.patients[j].id}")
-        #     model.Add(sum(valid_for_j) == 1)
-        # for i in unvalidpats:
-        #     print(i)
+        for j in range(m):
+            valid_assignments = [x[i, j] for i in range(n) if (i, j) in x]
+            if valid_assignments:
+                model.Add(sum(valid_assignments) <= 1)
         # Constraint: Nurse can only take 1 patient per shift
         for i in range(n):
             nurse = self.nurses[i]
@@ -81,15 +76,23 @@ class AutoMultiPatientSolverCP:
             assigned = [x[i,j] for j in range(m) if (i,j) in x]
             total_stress_expr = 2 * sum(assigned) + self.nurses[i].current_stress
             model.Add(total_stress_expr <= 10)
-        model.Maximize(sum(x[i,j] * score_matrix[i,j] for (i,j) in valid_pairs))
 
+            
+        # model.Maximize(sum(x[i,j] * score_matrix[i,j] for (i,j) in valid_pairs))
+        alpha = 50  # large enough to favor assigning patients
+        model.Maximize(
+            alpha * sum(x[i, j] for (i, j) in valid_pairs) +
+            sum(x[i, j] * score_matrix[i, j] for (i, j) in valid_pairs)
+        )
         solver = cp_model.CpSolver()
-
 
         # Solve
         status = solver.Solve(model)
         assignments = []
         extra_patients = []
+        assigned_patient_ids = [patient.id for _, patient, _ in assignments]
+
+
         if status in [cp_model.OPTIMAL, cp_model.FEASIBLE]:
             for (i, j) in valid_pairs:
                 if solver.Value(x[i, j]) == 1:
@@ -103,10 +106,10 @@ class AutoMultiPatientSolverCP:
         else:
             print("No feasible solution found.")
         
+        
         assigned_patient_ids = {assignment[1].id for assignment in assignments}
         for patient in self.patients:
             if patient.id not in assigned_patient_ids:
                 extra_patients.append(patient)
-
 
         return (assignments,extra_patients)
