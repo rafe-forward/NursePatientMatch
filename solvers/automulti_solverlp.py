@@ -59,9 +59,9 @@ class AutoMultiPatientSolverLP:
         # Enforce: Each patient assigned to exactly one nurse
         for j in range(m):
             valid_for_j = [x[i, j] for i in range(n) if (i, j) in x]
-            if not valid_for_j:
-                raise Exception(f"No valid nurses available for patient {self.patients[j].id}")
-            solver.Add(solver.Sum(valid_for_j) == 1)
+            # if not valid_for_j:
+            #     raise Exception(f"No valid nurses available for patient {self.patients[j].id}")
+            solver.Add(solver.Sum(valid_for_j) <= 1)
         # Enforce: Nurse can only have one patient per shift
         for i in range(n):
             nurse = self.nurses[i]
@@ -90,7 +90,8 @@ class AutoMultiPatientSolverLP:
 
         # Solve
         status = solver.Solve()
-
+        print(f"Iterations: {solver.iterations()}")
+        print(f"Variable count: {len(solver.variables())}")
         assignments = []
         if status in [pywraplp.Solver.OPTIMAL, pywraplp.Solver.FEASIBLE]:
             for (i, j) in valid_pairs:
@@ -101,4 +102,10 @@ class AutoMultiPatientSolverLP:
                     assignments.append((nurse, patient, score))
         else:
             print("No feasible solution found.")
-        return assignments
+    
+        extra_patients = []
+        assigned_patient_ids = {assignment[1].id for assignment in assignments}
+        for patient in self.patients:
+            if patient.id not in assigned_patient_ids:
+                extra_patients.append(patient)
+        return (assignments,extra_patients)

@@ -23,15 +23,17 @@ from solvers.automulti_solvecp import AutoMultiPatientSolverCP
 
 
 class AutoMultiPatientSolution(SolutionStrategy):
-    def __init__(self, nurses, patients, strat ="lp"):
+    def __init__(self, nurses, patients, strat):
         self.nurses = nurses
         self.patients = patients
         self.strat = strat
     def solve(self):
         if self.strat == "lp":
             solver = AutoMultiPatientSolverLP(self.nurses, self.patients)
+            return solver.match()
         elif self.strat == "cp":
             solver = AutoMultiPatientSolverCP(self.nurses, self.patients)
+            return solver.match()
         else:
             print("None")
         return solver.match()

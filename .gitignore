@@ -11,6 +11,10 @@ virtualenv/
 *.egg-info/
 *.dist-info/
 
+
+#Environment variables
+.env
+
 # Log files and databases
 *.log
 *.sql
@@ -27,3 +31,5 @@ virtualenv/
 
 #data
 data/
+
+assignments.json

@@ -20,13 +20,22 @@ def submitAssignment(file_path, data):
     else:
         assignment_list = []
 
-    if isinstance(data, list):
-        assignment_list.extend(data)
-    else:
-        assignment_list.append(data)
+    assignment_list = data if isinstance(data, list) else [data]
 
     with open(file_path, 'w') as json_file:
-        json.dump(assignment_list, json_file, indent=4)
+        out = [
+            {
+                "nurse_id": nurse.id,
+                "nurse_name": nurse.name,
+                "patient_id": patient.id,
+                "condition": patient.condition,
+                "required_shift": patient.required_shift,
+                "score": score
+            }
+            for (nurse, patient, score) in assignment_list
+        ]
+
+        json.dump(out, json_file, indent=4)
 
     print(f"Appended {len(data) if isinstance(data, list) else 1} assignment(s) to '{file_path}'")
 
@@ -34,3 +43,17 @@ def submitTempAssignment(file_path,data):
     with open(file_path, "w") as json_file:
         json.dump(data,json_file,indent=4)
     
+def assignments_to_dict(data):
+    assignment_list = data if isinstance(data, list) else [data]
+    out = [
+    {
+        "nurse_id": nurse.id,
+        "nurse_name": nurse.name,
+        "patient_id": patient.id,
+        "condition": patient.condition,
+        "required_shift": patient.required_shift,
+        "score": score
+    }
+    for (nurse, patient, score) in assignment_list
+    ]
+    return out

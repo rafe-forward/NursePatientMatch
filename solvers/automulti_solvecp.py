@@ -33,7 +33,7 @@ class AutoMultiPatientSolverCP:
         model = cp_model.CpModel()
         if not model:
             raise Exception("model is not available")
-
+        print("cp")
         n = len(self.nurses)
         m = len(self.patients)
 
@@ -55,6 +55,8 @@ class AutoMultiPatientSolverCP:
             valid_assignments = [x[i, j] for i in range(n) if (i, j) in x]
             if valid_assignments:
                 model.Add(sum(valid_assignments) <= 1)
+            else:
+                print(f"Patient {self.patients[j].id} has no valid matches.")
         # Constraint: Nurse can only take 1 patient per shift
         for i in range(n):
             nurse = self.nurses[i]
@@ -79,7 +81,7 @@ class AutoMultiPatientSolverCP:
 
             
         # model.Maximize(sum(x[i,j] * score_matrix[i,j] for (i,j) in valid_pairs))
-        alpha = 50  # large enough to favor assigning patients
+        alpha = 500  # large enough to favor assigning patients
         model.Maximize(
             alpha * sum(x[i, j] for (i, j) in valid_pairs) +
             sum(x[i, j] * score_matrix[i, j] for (i, j) in valid_pairs)

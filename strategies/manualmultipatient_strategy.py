@@ -9,7 +9,6 @@ class ManualMultiPatientSolution(SolutionStrategy):
     def solve(self):
         results = []
         for patient in self.patient_list:
-            print(f"\nMatching for Patient ID: {patient.id}, Condition: {patient.condition}, Shift: {patient.required_shift}")
             sps = SinglePatientSolution(self.nurse_list, patient, self.return_limit)
             scored_nurses = sps.solve()
             results.append((patient, scored_nurses))

@@ -151,9 +151,10 @@
       "Wed PM",
       "Fri AM",
       "Mon AM",
-      "Tue PM"
+      "Tue PM",
+      "Thu PM"
     ],
-    "max_patients": 1,
+    "max_patients": 2,
     "current_stress": 1
   },
   {
@@ -977,7 +978,7 @@
       "Mon PM"
     ],
     "max_patients": 3,
-    "current_stress": 8
+    "current_stress": 4
   },
   {
     "id": "N64",
@@ -1027,8 +1028,8 @@
       "Tue PM",
       "Fri PM"
     ],
-    "max_patients": 1,
-    "current_stress": 3
+    "max_patients": 3,
+    "current_stress": 1
   },
   {
     "id": "N67",
@@ -1072,7 +1073,7 @@
       "Thu AM"
     ],
     "max_patients": 3,
-    "current_stress": 9
+    "current_stress": 4
   },
   {
     "id": "N70",
@@ -1418,7 +1419,7 @@
       "Wed AM",
       "Fri PM"
     ],
-    "max_patients": 1,
+    "max_patients": 3,
     "current_stress": 3
   },
   {
