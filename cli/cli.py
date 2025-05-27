@@ -22,8 +22,8 @@ def interactive_selection(strategy):
     return selected
 
 def main():
-    nurse_path = "data/nurses_hard.json"
-    patient_path = "data/patients_hard.json"
+    nurse_path = "data/nurses.json"
+    patient_path = "data/patients.json"
     assignment_path = "assignments.json"
 
     nurses = loadNurses(nurse_path)

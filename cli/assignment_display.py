@@ -17,5 +17,3 @@ def confirm_submission():
         else:
             print("Invalid input.")
 
-def display_candidate_options(candidate_matches):
-    x = 1

@@ -6,11 +6,10 @@ def match_nurses_patients(nurses,patients):
     if not nurses:
         nurses = loadNurses("data/nurses.json")
     if not patients:
-        raise("Patients not provided")
-        return
+        patients = loadPatients("data/patients.json")
     scheduler = SchedulerApp(nurses,patients)
-    strategy = AutoMultiPatientSolution(nurses,patients)
-    result = scheduler.run_strategy(AutoMultiPatientSolution)
+    strategy = AutoMultiPatientSolution(nurses,patients, "lp")
+    result = scheduler.run_strategy(strategy)
     if isinstance(result, tuple) and len(result) == 2:
         assignments, unmatched = result
     else:

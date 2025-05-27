@@ -1,4 +1,4 @@
-from cli.assignment_display import display_assignments, display_candidate_options
+from cli.assignment_display import display_assignments
 class SchedulerApp:
     def __init__(self, nurses, patients):
         self.nurses = nurses
@@ -10,10 +10,5 @@ class SchedulerApp:
         
         if isinstance(results, tuple) and len(results) == 2:
             return results
-
-        if isinstance(results, list) and all(isinstance(r, tuple) and isinstance(r[1], list) for r in results):
-            display_candidate_options(results)
-
-            return [], []
 
         return results, [] 
