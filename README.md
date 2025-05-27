@@ -38,6 +38,6 @@ docker build -t nurse-matching-app .
 ```
 
 ## To change files for nurses or patients
--add file to /data
--In cli/cli on lines 25-26 change path to the desired path for your new nurses or patients
--Run program again
+  - add file to /data
+  - In cli/cli on lines 25-26 change path to the desired path for your new nurses or patients
+  - Run program again
